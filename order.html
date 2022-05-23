@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+    <h2 class="order__title">Order page</h2>
+    <form  class="form">
+        <div class="form__left">
+            <label for="name" class="label">Your Name</label>
+            <input type="text" class="input" name="name" required minlength="4">
+             <label for="surname" class="label">Your Surname</label>
+            <input type="text" class="input" name="surname" required minlength="5">
+            <label for="date" class="label">Date</label>
+            <input type="date" class="input" name="date" required />
+            <label for="street" class="label">Street</label>
+            <input type="text" class="input" name="street" required />
+        </div>
+        <div class="form__right">
+            <label for="hnumber" class="label">House number</label>
+            <input type="number" class="input" name="house_number" required min="1">
+            <label for="name" class="label">Flat number</label>
+            <input type="text" class="input" name="flat_number" required >
+            <label class="label">Paymen type</label>
+            <div class="radio__wrapper">
+                <input id="radio" type="radio" name="paypent" value="cash" class="radio">
+                <input id="radio" type="radio" name="payment" value="card" class="radio">
+            </div>
+            <button type="submit" class="submit" >Submit</button>
+        </div>
+    </form>
+    <p class="order__text"></p>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
